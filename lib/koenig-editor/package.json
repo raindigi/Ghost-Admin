@@ -16,6 +16,12 @@
     "@tryghost/kg-parser-plugins": "*",
     "ember-auto-import": "^1.2.21",
     "ember-cli-babel": "^7.5.0",
-    "ember-cli-htmlbars": "^3.0.1"
-  }
+    "ember-cli-htmlbars": "^3.0.1",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
